@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 30px;
+  transition: background 0.5s, color 0.5s;
+}
+
+body.dark {
+  background-color: #222;
+  color: white;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background: #555;
+  color: #fff;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: teal;
+  margin: 40px auto;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.box.animate {
+  transform: rotate(360deg) scale(1.5);
+  background: orange;
+}
